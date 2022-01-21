@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@400;500;600&display=swap');
+
+* {
+    color: ghostwhite;
+    font-family: 'Chakra Petch', sans-serif;
+}
+
+body {
+    background-image: url('https://images.unsplash.com/photo-1532236395709-7d70320fec2d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1502&q=80');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.glass_parent {
+    height: 900px;
+    width: 80%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+}
+
+#glassmorphism {
+    display: flex;
+    flex-direction: row;
+    border-radius: 15px;
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    -ms-border-radius: 15px;
+    -o-border-radius: 15px;
+    background-color: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(13px);
+}
+
+.name>i {
+    margin-right: 15px;
+}
+
+.my_intro {
+    padding: 3%;
+    background-color: rgba(255, 255, 255, 0.2);
+    border-radius: 20px 0px 0px 20px;
+    -webkit-border-radius: 20px 0px 0px 20px;
+    -moz-border-radius: 20px 0px 0px 20px;
+    -ms-border-radius: 20px 0px 0px 20px;
+    -o-border-radius: 20px 0px 0px 20px;
+    backdrop-filter: blur(14px);
+}
+
+.intro_content_one {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.intro_content_one>div {
+    margin-right: 20px;
+}
+
+.skills {
+    margin: 1.5%;
+}
+
+.my_image {
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    background-image: url('https://images.unsplash.com/photo-1528360983277-13d401cdc186?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80');
+    background-size: cover;
+    display: flex;
+    flex-direction: row;
+    margin: auto;
+}
+
+.logos {
+    display: flex;
+    flex-direction: row;
+}
+
+.my_intro .logos>.round {
+    height: 60px;
+    width: 60px;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-left: 3em;
+}
+
+.round>i {
+    color: black;
+    font-size: 40px;
+    text-align: center;
+}
+
+.flex_parent {
+    display: grid;
+    grid-template: "1fr 1fr";
+    gap: 10px;
+}
+
+.flex_parent>div {
+    padding: 10px;
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+    background-color: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(20px);
+}
