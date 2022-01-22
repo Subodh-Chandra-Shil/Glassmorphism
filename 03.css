@@ -1,0 +1,49 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400&family=Manrope:wght@200;400&family=Raleway+Dots&family=Raleway:wght@200;300&family=Yanone+Kaffeesatz:wght@200;300;400&display=swap');
+
+html {
+    font-family: 'Raleway', 'Lato';
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+main > section {
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+section.banner {
+    display: flex;
+    flex-direction: row;
+    border: 3px solid red;
+    height: 400px;
+}
+
+.banner-right > img {
+    height: 97%;
+}
+
+.banner-right {
+    width: 20%;
+}
+
+.banner-left {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: fit-content;
+    height: 100%;
+}
+
+.banner-title {
+    white-space: nowrap;
+    position: relative;
+}
+
+.banner-title::before {
+    content: 'I am a Blockchain Developer';
+    position: absolute;
+}
