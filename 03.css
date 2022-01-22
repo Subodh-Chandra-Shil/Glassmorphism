@@ -7,9 +7,10 @@ html {
 * {
     margin: 0;
     padding: 0;
+        font-family: 'Raleway', 'Lato';
 }
 
-main > section {
+main>section {
     margin-left: 5%;
     margin-right: 5%;
 }
@@ -21,7 +22,7 @@ section.banner {
     height: 400px;
 }
 
-.banner-right > img {
+.banner-right>img {
     height: 97%;
 }
 
@@ -46,4 +47,77 @@ section.banner {
 .banner-title::before {
     content: 'I am a Blockchain Developer';
     position: absolute;
+    top: 0;
+    left: 0;
+    animation: typing-effect .5s ease-in-out infinite;
+    -webkit-animation: typing-effect .5s ease-in-out infinite;
+}
+
+@keyframes typing-effect {
+    0% {}
+}
+
+
+
+.container {
+    display: inline-block;
+}
+
+.text {
+    display: inline-block;
+}
+
+.typed-out > button > h2{
+    overflow: hidden;
+    /*border-right: .15em solid orange;
+    */white-space: nowrap;
+    position: relative;
+    animation: typing 3s .5s steps(20,end) infinite;
+    font-size: 1.6rem;
+    width: 0;
+    -webkit-animation: typing 1s .5s ease-in-out steps(20,end) infinite;
+}
+
+
+@keyframes typing {
+    0% {
+        width: 0;
+        opacity: 0%;
+    }
+
+    50% {
+        width: 100%;
+    }  
+
+    100% {
+        width: 0%;
+    }
+}
+
+
+.typed-out-two {
+    overflow: hidden;
+    /*border-right: .15em solid orange;
+    */white-space: nowrap;
+    position: relative;
+    animation: typing-two 3s 3.5s steps(40,end) infinite;
+    font-size: 1.6rem;
+    width: 0;
+    -webkit-animation: typing-two 3s 4.5s steps(40,end) infinite;
+}
+
+
+@keyframes typing-two {
+    0% {
+        width: 0;
+        opacity: 0%;
+    }
+
+    50% {
+        width: 100%
+    }
+
+    100% {
+        width: 0%;
+    }
 }
