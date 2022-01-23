@@ -25,49 +25,271 @@
 
     <!--! External Stylesheet  -->
     <link rel="stylesheet" href="01.css">
-    <title>E-commerce Site Bootstrap</title>
+    <title>Panda E-commerce Site Bootstrap</title>
 </head>
 
 <body>
-    <!--! Navbar  -->
-    <nav class="navbar navbar-expand-lg navbar-light" style="font-family: 'Monda';">
-        <div class="container-fluid border border-warning">
-            <a class="navbar-brand" href="#">
-                <img src="/media/images/logo.png" alt="" width="100%" height="100%">
-            </a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
+    <header>
+        <!--! Navbar  -->
+        <nav class="navbar navbar-expand-lg navbar-light" style="font-family: 'Monda';">
+            <div
+                class="container d-flex flex-column d-lg-flex justify-content-lg-between flex-lg-row flex-lg-row border-lg border-3 rounded-lg-3 rounded-3">
+                <a class="navbar-brand" href="#">
+                    <img src="/media/images/logo.png" alt="" width="100%" height="100%">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse ms-4 d-flex flex-column justify-content-end navbar-collapse d-lg-flex justify-content-end d-lg-flex flex-lg-row"
+                    id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="#">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Shoes</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Backpack</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Subscribe</a>
+                        </li>
+                    </ul>
+                    <form class="d-flex">
+                        <input class="form-control me-2 ms-2" type="search" placeholder="Query" aria-label="Search">
+                        <button class="btn btn-outline-success me-2" type="submit"><i
+                                class="fas fa-search"></i></button>
+                    </form>
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link active border-lg-start border-lg-3" aria-current="page" href="#"><i
+                                    class="bi bi-person-circle" style="font-size: 30px; color: orangered;"></i></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active border-lg-start border-lg-3" aria-current="page" href="#"><i
+                                    class="bi bi-cart4" style="font-size: 30px; color: orangered;"></i></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <!--! Image Slider  -->
+        <div id="carouselExampleControls"
+            class="container carousel slide bg-info bg-gradient p-4 border rounded-3 h-75 mt-lg-4"
+            data-bs-ride="carousel" style="font-family: 'Exo'; font-weight: bold;">
+            <div class="carousel-inner">
+                <div class=" carousel-item active">
+                    <div class="row d-flex align-items-center">
+                        <div class="col-lg-7">
+                            <h1>This Valentine Buy a XBOX and play games with your Girlfriend</h1>
+                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ducimus cumque alias vero
+                                consectetur, a corporis itaque beatae nisi iure voluptatum doloribus adipisci, fugit
+                                quis qui libero eveniet asperiores? Magnam, fuga!</p>
+                            <h2>$500</h2>
+                            <button class="btn btn-warning">Buy Now <i class="bi bi-arrow-right"></i></button>
+                        </div>
+                        <div class="col-lg-5">
+                            <img src="media/images/banner-images/xbox.png" class="d-block w-100" alt="buy_xbox">
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="row d-flex align-items-center">
+                        <div class="col-lg-7">
+                            <h1>Buy The Smart TV and be the oversmart among the smart neighbours</h1>
+                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ducimus cumque alias vero
+                                consectetur, a corporis itaque beatae nisi iure voluptatum doloribus adipisci, fugit
+                                quis qui libero eveniet asperiores? Magnam, fuga!</p>
+                            <h2>$500</h2>
+                            <button class="btn btn-warning">Buy Now <i class="bi bi-arrow-right"></i></button>
+                        </div>
+                        <div class="col-lg-5">
+                            <img src="media/images/banner-images/tv.png" class="d-block w-100" alt="buy_tv">
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="row d-flex align-items-center">
+                        <div class="col-lg-7">
+                            <h1>Buy This Expensive Headphone to amaze with the true sound</h1>
+                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ducimus cumque alias vero
+                                consectetur, a corporis itaque beatae nisi iure voluptatum doloribus adipisci, fugit
+                                quis qui libero eveniet asperiores? Magnam, fuga!</p>
+                            <h2>$500</h2>
+                            <button class="btn btn-warning">Buy Now <i class="bi bi-arrow-right"></i></button>
+                        </div>
+                        <div class="col-lg-5">
+                            <img src="media/images/banner-images/headphone.png" class="d-block w-100"
+                                alt="buy_headphone">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
             </button>
-            <div class="collapse navbar-collapse d-lg-flex justify-content-end" id="navbarNav">
-                <ul class="navbar-nav">
-                    <li class="nav-item">
-                        <a class="nav-link active border-start border-3" aria-current="page" href="#">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link border-start border-3" href="#">Shoes</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link border-start border-3" href="#">Backpack</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link border-start border-3" href="#">Subscribe</a>
-                    </li>
-                </ul>
-                <form class="border-start border-3 d-flex">
-                    <input class="form-control me-2 ms-2" type="search" placeholder="Query" aria-label="Search">
-                    <button class="btn btn-outline-success me-2" type="submit"><i class="fas fa-search"></i></button>
-                </form>
-                <ul class="navbar-nav">
-                    <li class="nav-item">
-                        <a class="nav-link active border-start border-3" aria-current="page" href="#"><i class="bi bi-person-circle" style="font-size: 30px; color: orangered;"></i></a>
-                    </li>
-                                        <li class="nav-item">
-                        <a class="nav-link active border-start border-3" aria-current="page" href="#"><i class="bi bi-cart4" style="font-size: 30px; color: orangered;"></i></a>
-                    </li>
-                </ul>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+    </header>
+
+
+    <!--! Product Categories  -->
+    <main class="mt-lg-4" style="font-family: 'Rajdhani';">
+        <section>
+            <div class="container">
+                <div class="row gx-3">
+                    <div
+                        class="col-lg-4 bg-warning d-flex flex-row justify-content-center align-items-center rounded-3">
+                        <h1 class="fw-bold">Watch</h1>
+                        <img src="media/images/categories/watch.png" alt="">
+                    </div>
+                    <div
+                        class="col-lg-4 bg-primary d-flex flex-row justify-content-center align-items-center rounded-3">
+                        <h1 class="fw-bold">Bag</h1>
+                        <img src="media/images/categories/bag.png" alt="">
+                    </div>
+                    <div class="col-lg-4 bg-info d-flex flex-row justify-content-center align-items-center rounded-3">
+                        <h1 class="fw-bold">Shoes</h1>
+                        <img src="media/images/categories/shoes.png" alt="">
+
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!--! Products Showcase Section  -->
+
+    <!--! Product: Shoes -->
+    <section class="p-3 mt-5 border rounded-3" style="font-family: 'Monda'; background-color: #F4F4F4;">
+        <div class="container">
+            <div class="d-flex flex-row justify-content-between mb-3 mt-5">
+                <h1>Shoes</h1>
+                <h5 class="text-warning">See All</h5>
+            </div>
+            <div class="d-lg-flex flex-lg-row justify-content-lg-evenly">
+                <div class="row row-cols-1 row-cols-md-3 g-4 ">
+                    <div class="col">
+                        <div class="card h-100 border rounded-3 pb-3">
+                            <img src="media/images/shoes/shoe-1.png" class="card-img-top" alt="men_shoes">
+                            <div class="card-body">
+                                <h3 class="card-title fw-bold text-center">Reebok Dart Men’s Shoes</h3>
+                                <p class="card-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nostrum
+                                    aspernatur corporis autem modi minima optio.</p>
+                            </div>
+                            <h2 class="text-center" style="font-family: 'Rajdhani';">$599.99</h2>
+                            <div class="d-flex justify-content-center">
+                                <button class="btn btn-dark">Buy Now</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col">
+                        <div class="card h-100 border rounded-3 pb-3">
+                            <img src="media/images/shoes/shoe-2.png" class="card-img-top" alt="men_shoes">
+                            <div class="card-body">
+                                <h3 class="card-title fw-bold text-center">Reebok Dart Men’s Shoes</h3>
+                                <p class="card-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nostrum
+                                    aspernatur corporis autem modi minima optio.</p>
+                            </div>
+                            <h2 class="text-center" style="font-family: 'Rajdhani';">$699.99</h2>
+                            <div class="d-flex justify-content-center">
+                                <button class="btn btn-dark">Buy Now</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col">
+                        <div class="card h-100 border rounded-3 pb-3">
+                            <img src="media/images/shoes/shoe-3.png" class="card-img-top" alt="men_shoes">
+                            <div class="card-body">
+                                <h3 class="card-title fw-bold text-center">Reebok Dart Men’s Shoes</h3>
+                                <p class="card-text text-center">Lorem, ipsum dolor sit amet consectetur adipisicing
+                                    elit.
+                                    Nostrum
+                                    aspernatur corporis autem modi minima optio.</p>
+                            </div>
+                            <h2 class="text-center" style="font-family: 'Rajdhani';">$799.99</h2>
+                            <div class="d-flex justify-content-center">
+                                <button class="btn btn-dark">Buy Now</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!--! Products: Backpack  -->
+            <div class="d-flex flex-row justify-content-between mb-3 mt-5">
+                <h1>Backpack</h1>
+                <h5 class="text-warning">See All</h5>
+            </div>
+            <div class="d-lg-flex flex-lg-row justify-content-lg-evenly">
+                <div class="row row-cols-1 row-cols-md-3 g-4">
+                    <div class="col">
+                        <div class="card h-100 border rounded-3 pb-3">
+                            <img src="media/images/bags/bag-1.png" class="card-img-top" alt="men_shoes">
+                            <div class="card-body">
+                                <h3 class="card-title fw-bold text-center">Ison Backpack</h3>
+                                <p class="card-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nostrum
+                                    aspernatur corporis autem modi minima optio.</p>
+                            </div>
+                            <h2 class="text-center" style="font-family: 'Rajdhani';">$599.99</h2>
+                            <div class="d-flex justify-content-center">
+                                <button class="btn btn-dark">Buy Now</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col">
+                        <div class="card h-100 border rounded-3 pb-3">
+                            <img src="media/images/bags/bag-2.png" class="card-img-top" alt="men_shoes">
+                            <div class="card-body">
+                                <h3 class="card-title fw-bold text-center">Biaowang Backpack</h3>
+                                <p class="card-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nostrum
+                                    aspernatur corporis autem modi minima optio.</p>
+                            </div>
+                            <h2 class="text-center" style="font-family: 'Rajdhani';">$699.99</h2>
+                            <div class="d-flex justify-content-center">
+                                <button class="btn btn-dark">Buy Now</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col">
+                        <div class="card h-100 border rounded-3 pb-3">
+                            <img src="media/images/bags/bag-3.png" class="card-img-top" alt="men_shoes">
+                            <div class="card-body">
+                                <h3 class="card-title fw-bold text-center">Dxyizu WS54 Smart</h3>
+                                <p class="card-text text-center">Lorem, ipsum dolor sit amet consectetur adipisicing
+                                    elit.
+                                    Nostrum
+                                    aspernatur corporis autem modi minima optio.</p>
+                            </div>
+                            <h2 class="text-center" style="font-family: 'Rajdhani';">$799.99</h2>
+                            <div class="d-flex justify-content-center">
+                                <button class="btn btn-dark">Buy Now</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
-    </nav>
+    </section>
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous">
+    </script>
 </body>
+
 </html>
